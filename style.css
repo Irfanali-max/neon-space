@@ -1,0 +1,38 @@
+body { margin: 0; padding: 0; background-color: #050505; color: white; font-family: 'Segoe UI', sans-serif; height: 100vh; overflow: hidden; touch-action: none; }
+.screen-overlay { text-align: center; background: rgba(15, 15, 25, 0.95); padding: 25px; border-radius: 20px; box-shadow: 0 0 30px rgba(0, 150, 255, 0.4); width: 85%; max-width: 400px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; border: 1px solid rgba(0, 150, 255, 0.3); display: none; max-height: 80vh; overflow-y: auto; }
+#main-menu { display: block; }
+h1 { color: #00d2ff; font-size: 28px; text-transform: uppercase; text-shadow: 0 0 15px #00d2ff; margin-bottom: 5px; margin-top: 0;}
+.total-coins-display { background: rgba(255, 215, 0, 0.1); border: 1px solid #ffcc00; padding: 10px; border-radius: 10px; color: #ffcc00; font-size: 20px; font-weight: bold; margin-bottom: 15px; text-shadow: 0 0 10px rgba(255,204,0,0.5); }
+.btn { padding: 12px; color: white; border: none; border-radius: 12px; cursor: pointer; font-size: 16px; font-weight: bold; margin-top: 10px; width: 100%; text-transform: uppercase; box-shadow: 0 5px 15px rgba(0,0,0,0.5); transition: 0.2s; }
+.btn-play { background: linear-gradient(45deg, #00d2ff, #3a7bd5); }
+.btn-shop { background: linear-gradient(45deg, #e52d27, #b31217); }
+.btn-google { background: white; color: #444; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+.btn-google img { width: 20px; margin-right: 10px; }
+.btn:active { transform: scale(0.95); }
+.shop-section-title { color: #ffcc00; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-bottom: 1px solid #555; padding-bottom: 5px; text-align: left;}
+.shop-item { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 12px; border-radius: 10px; margin-bottom: 10px; display: flex; align-items: center; justify-content: space-between; }
+.shop-item-info { text-align: left; }
+.shop-item-name { font-size: 16px; font-weight: bold; color: white; }
+.shop-item-price { color: #ffcc00; font-size: 12px; margin-top: 3px; }
+.btn-buy { background: #28a745; padding: 6px 12px; border: none; border-radius: 8px; color: white; font-weight: bold; font-size: 12px; }
+.btn-select { background: #00d2ff; padding: 6px 12px; border: none; border-radius: 8px; color: black; font-weight: bold; font-size: 12px; }
+.btn-selected { background: #555; padding: 6px 12px; border: none; border-radius: 8px; color: white; font-weight: bold; font-size: 12px; cursor: default; }
+.btn-back { background: #dc3545; padding: 10px; margin-top: 15px; }
+#game-over-screen { background: rgba(30, 10, 10, 0.95); border-color: rgba(255, 50, 50, 0.3); }
+#game-over-screen h1 { color: #ff4444; text-shadow: 0 0 10px #ff4444; }
+#stage-clear-screen { background: rgba(10, 30, 10, 0.95); border-color: rgba(50, 255, 50, 0.3); }
+#stage-clear-screen h1 { color: #44ff44; text-shadow: 0 0 10px #44ff44; }
+#banner-ad { position: fixed; bottom: 0; left: 0; width: 100%; background: #fff; color: #000; text-align: center; padding: 8px 0; font-size: 14px; font-weight: bold; z-index: 1000; display: block; border-top: 2px solid #ccc;}
+#interstitial-ad { background: #fff; color: #000; width: 100%; height: 100%; display: none; flex-direction: column; align-items: center; justify-content: center; z-index: 200; border-radius: 0; }
+#interstitial-ad h2 { color: #333; }
+.ad-badge { background: #ffcc00; padding: 2px 5px; border-radius: 3px; font-size: 10px; position: absolute; top: 5px; left: 5px; }
+#game-container { display: none; position: relative; width: 100%; height: calc(100% - 35px); }
+canvas { display: block; }
+#hud { position: absolute; top: 10px; left: 0; width: 100%; padding: 0 15px; box-sizing: border-box; font-size: 16px; font-weight: bold; color: white; z-index: 10; pointer-events: none; }
+.hud-row { display: flex; justify-content: space-between; margin-bottom: 5px; background: rgba(0,0,0,0.5); padding: 8px 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); }
+#stage-board { color: #00d2ff; }
+#time-board { color: #ffcc00; }
+#score-board { color: #fff; }
+#lives-board { color: #ff4444; letter-spacing: 2px; }
+#shield-timer { color: #00d2ff; display: none; text-align: center; width: 100%; position: absolute; top: 85px; font-weight: bold; font-size: 18px; text-shadow: 2px 2px 4px #000; transition: color 0.3s;}
+#touch-hint { position: absolute; bottom: 20px; width: 100%; text-align: center; color: rgba(255, 255, 255, 0.6); font-size: 14px; pointer-events: none; z-index: 5; background: rgba(0,0,0,0.5); padding: 5px 0; }
